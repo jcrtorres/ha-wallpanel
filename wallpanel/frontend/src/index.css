@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #121a2b;
+  --color-bg2: #18213a;
+  --color-tile: #1d2741;
+  --color-line: #2a3557;
+  --color-ink: #e8ecf5;
+  --color-muted: #8a94ad;
+  --color-copper: #c69277;
+  --color-teal: #1f8fb4;
+  --color-alert: #e24a4a;
+  --font-sans: "Inter", "Segoe UI", Roboto, system-ui, sans-serif;
+}
+
+html, body, #root { height: 100%; margin: 0; overflow: hidden; }
+body { background: var(--color-bg); color: var(--color-ink); user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; }
+input, textarea, select { user-select: text; -webkit-user-select: text; }
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* Swiper: cada vista ocupa toda la pantalla */
+.swiper { width: 100%; height: 100%; }
+.swiper-slide { height: 100%; }
